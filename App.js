@@ -19,6 +19,8 @@ import { View } from 'react-native';
 import Greeting from './components/Greeting';
 
 import Travel from './screens/week3/Travel';
+import Resort from './screens/week4/Resort';
+import Health from './screens/week5/Health';
 
 export default function App() {
   return (
@@ -32,17 +34,19 @@ export default function App() {
     // <Ex07/>
     // <Ex08/>
     // <Ex09/>
-    //  <Ex10/>
-    //<Ex11/>
-    //<Ex12/>
+    // <Ex10/>
+    // <Ex11/>
+    // <Ex12/>
 
     //  <View style={{alignItems: 'center', top: 50}}>
     //       <Greeting name='Rexxar' />
     //       <Greeting name='Jaina' />
     //       <Greeting name='Valeera' />
-    //     </View>
+    //   </View>
 
-    <Travel />
+    // <Travel />
+   // <Resort/> 
+    <Health/>
   );
 
 
