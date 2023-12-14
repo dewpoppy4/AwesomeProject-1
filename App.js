@@ -45,8 +45,8 @@ export default function App() {
     //   </View>
 
     // <Travel />
-   // <Resort/> 
-    <Health/>
+   <Resort/> 
+    // <Health/>
   );
 
 
