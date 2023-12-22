@@ -5,7 +5,7 @@ export default function Bmi() {
     const [weight, setWeight] = useState('70');
     const [height, setHeight] = useState('170');
     const [bmi, setBmi] = useState('0');
-    const [proportion, setProportion] = useState('NORMAL');
+    const [proportion, setProportion] = useState('Default');
 
     console.log("STATE : ", weight, height, bmi, proportion);
 
@@ -45,10 +45,10 @@ export default function Bmi() {
 
             <View style={{ flexDirection: 'row', marginVertical: 10 }}>
                 <View style={{ flex: 1, backgroundColor: 'magenta', marginRight: 10, height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center' }} >
-                    <Text style={{ fontSize: 25 }}>{bmi}</Text>
+                    <Text style={{ fontSize: 25,textAlign : 'center' }}>{bmi}</Text>
                 </View>
                 <View style={{ flex: 1, backgroundColor: 'cyan', marginLeft: 10, height: 100, borderRadius: 20, justifyContent: 'center', alignItems: 'center' }} >
-                    <Text style={{ fontSize: 25 }}>  {proportion} </Text>
+                    <Text style={{ fontSize: 25 ,textAlign : 'center'}}>  {proportion} </Text>
                 </View>
             </View>
             {/* <Button title="Calculate" onPress={ onPressButton } /> */}

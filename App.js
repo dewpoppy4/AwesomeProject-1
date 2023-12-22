@@ -21,6 +21,8 @@ import Greeting from './components/Greeting';
 import Travel from './screens/week3/Travel';
 import Resort from './screens/week4/Resort';
 import Health from './screens/week5/Health';
+import Review from './screens/week4/Review';
+import Home from './screens/Week6/Home';
 
 export default function App() {
   return (
@@ -45,8 +47,10 @@ export default function App() {
     //   </View>
 
     // <Travel />
-   <Resort/> 
+    //  <Resort/> 
+    // <Review />
     // <Health/>
+    <Home/>
   );
 
 
