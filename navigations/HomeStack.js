@@ -1,17 +1,17 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Ex01 from '../screens/Week2/Ex01';
-import Ex02 from '../screens/Week2/Ex02';
-import Ex03 from '../screens/Week2/Ex03';
-import Ex04 from '../screens/Week2/Ex04';
-import Ex05 from '../screens/Week2/Ex05';
-import Ex06 from '../screens/Week2/Ex06';
-import Ex07 from '../screens/Week2/Ex07';
-import Ex08 from '../screens/Week2/Ex08';
-import Ex09 from '../screens/Week2/Ex09';
-import Ex10 from '../screens/Week2/Ex10';
-import Ex11 from '../screens/Week2/Ex11';
-import Ex12 from '../screens/Week2/Ex12';
+// import Ex01 from '../screens/week2/Ex01';
+// import Ex02 from '../screens/week2/Ex02';
+// import Ex03 from '../screens/week2/Ex03';
+// import Ex04 from '../screens/week2/Ex04';
+// import Ex05 from '../screens/week2/Ex05';
+// import Ex06 from '../screens/week2/Ex06';
+// import Ex07 from '../screens/week2/Ex07';
+// import Ex08 from '../screens/week2/Ex08';
+// import Ex09 from '../screens/week2/Ex09';
+// import Ex10 from '../screens/week2/Ex10';
+// import Ex11 from '../screens/week2/Ex11';
+// import Ex12 from '../screens/week2/Ex12';
 import Home from '../screens/week6/Home';
 
 
@@ -25,7 +25,7 @@ export default function HomeStack() {
                 component={Home}
                 options={{ title: "Home" }}
             />
-            <Stack.Screen
+            {/* <Stack.Screen
                 name="Ex01"
                 component={Ex01}
                 options={{ title: "Exercise 1" }}
@@ -84,7 +84,7 @@ export default function HomeStack() {
                 name="Ex12"
                 component={Ex12}
                 options={{ title: "Exercise 12" }}
-            />
+            /> */}
 
         </Stack.Navigator>
     );

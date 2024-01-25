@@ -1,10 +1,10 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
-import Cover from "../../components/Week6/Cover";
-import HomeIconMenu from "../../components/Week6/HomeIconMenu";
-import Tour from "../../components/Week6/Tour";
-import TourFlatList from "../../components/Week6/TourFlatList";
-import Event from "../../components/Week6/Event";
+import Cover from "../../components/week6/Cover";
+import HomeIconMenu from "../../components/week6/HomeIconMenu";
+import Tour from "../../components/week6/Tour";
+import TourFlatList from "../../components/week6/TourFlatList";
+import Event from "../../components/week6/Event";
 
 export default function Home() {
     return (
