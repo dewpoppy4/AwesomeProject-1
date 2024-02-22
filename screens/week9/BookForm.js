@@ -4,11 +4,13 @@ import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import BookStorage from "../../storages/BookStorage";
 import UploadArea from "../../components/week11/UploadArea";
+import BookService from "../../services/BookService";
 
 export default function BookForm() {
     const onLoad = async()=> {
         if (item) {
-          let book = await BookStorage.readItemDetail(item);
+          //let book = await BookStorage.readItemDetail(item);
+          let book = await BookService.getItemDetail(item);
           setId(book.id);
           setName(book.name);
           setPrice(book.price.toString());
@@ -31,7 +33,13 @@ export default function BookForm() {
         //A NEW ITEM
         let new_data = { id: id, name: name, price: price, image: image };
         //SAVE
-        await BookStorage.writeItem(new_data);
+        //await BookStorage.writeItem(new_data);
+        if(item){
+          await BookService.updateItem(new_data);
+        }else{
+          await BookService.storeItem(new_data);
+        }
+    
         //REDIRECT TO
         navigation.navigate("Book");
       };
