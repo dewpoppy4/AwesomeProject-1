@@ -28,6 +28,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
+import { AuthContext, AuthContextProvider } from "./hooks/AuthContextProvider";
 
 
 export default function App() {
@@ -57,11 +58,13 @@ export default function App() {
     // <Review />
     // <Health/>
     // <Home />
+    <AuthContextProvider>
     <NavigationContainer>
       {/* <HomeStack /> */}
       {/* <BottomTab /> */}
       <RootStack />
     </NavigationContainer>
+    </AuthContextProvider>
 
   );
 

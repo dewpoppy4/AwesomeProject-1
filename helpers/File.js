@@ -67,6 +67,6 @@ const download = async(uri)=>{
     }catch(error){
         console.error(error);
     }        
-};
+};                                      
 
 export default { requestPermission, getFromCamera, getFromGallery, save,download };
